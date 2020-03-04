@@ -3,3 +3,56 @@ body{
     margin: 1%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.divA, .divB, .divD, .divC, .divE, .divF{
+    padding: 1%;
+    margin: 5px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 80vh;
+}
+
+.divA{
+    grid-column: 1;
+    grid-row: 1;
+    background-color: pink;
+}
+
+.divB{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: blue;
+}
+
+.divC{
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-color: yellow;
+}
+
+.divD{
+    grid-column: 3;
+    grid-row: 1;
+    background-color: orange;
+}
+
+.divE{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: red;
+}
+
+.divF{
+    grid-column: 1;
+    grid-row: 3;
+    background-color: purple;
+}
+
+.newBackground{
+    background-color: gray;
+}
